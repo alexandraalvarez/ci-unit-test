@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Greeting from '../views/Greeting.vue'
+import Mocking from '../views/Mocking.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +11,16 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/greeting',
+    name: 'Greeting',
+    component: Greeting
+  },
+  {
+    path: '/mocking',
+    name: 'Mocking',
+    component: Mocking
   },
   {
     path: '/about',
